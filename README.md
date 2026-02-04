@@ -39,7 +39,7 @@ provider "aws" {
 }
 
 module "vpc" {
-  source = "../Terraform-module"
+  source = "./vpc"
 
   vpc_name = "demo-vpc"
   vpc_cidr = "10.0.0.0/16"
